@@ -28,12 +28,11 @@ public class SignInHome extends AppCompatActivity {
                 password = inpassword.getText().toString();
             }
         });
-//        signup.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent tosignup = new Intent(this,SignUp.class);
-//                startActivity(tosignup);
-//            }
-//        });
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }

@@ -6,51 +6,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000000"
+    android:background="#F2FFFFFF"
     tools:context=".SignInHome">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="270sp"
-        android:layout_height="40sp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="160sp"
-        android:hint="E-mail"
-        android:drawableLeft="@drawable/login"
-        android:textColorHint="#000000"
-        android:background="@drawable/round_edit"
-        android:inputType="textEmailAddress"
-         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_edge">
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="270sp"
-        android:layout_height="40sp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="40sp"
-        android:drawableLeft="@drawable/smartkey"
-        android:background="@drawable/round_edit"
-        android:hint="password"
-        android:textColorHint="#000000"
-        android:inputType="textPassword"
-         />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="300sp"
+            app:srcCompat="@drawable/newlogo2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="310sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="E-mail"
+            android:drawableLeft="@drawable/login"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:background="@drawable/round_edit"
+            android:inputType="textEmailAddress"
+            />
 
-    <Button
-        android:id="@+id/btsignin"
-        android:layout_width="135sp"
-        android:layout_height="35sp"
-        android:layout_marginTop="65sp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_edit"
-        android:text="Sign In" />
-    <Button
-        android:id="@+id/btsignup"
-        android:layout_width="135sp"
-        android:layout_height="35sp"
-        android:layout_marginTop="25sp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_edit"
-        android:text="Sign Up" />
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="310sp"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:paddingLeft="15sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:drawableLeft="@drawable/smartkey"
+            android:background="@drawable/round_edit"
+            android:hint="password"
+            android:textColorHint="#000000"
+            android:inputType="textPassword"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:padding="30sp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btsignin"
+                android:layout_width="135sp"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit"
+                android:text="Sign In" />
+            <Button
+                android:id="@+id/btsignup"
+                android:layout_width="135sp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit"
+                android:text="Sign Up" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 </LinearLayout>
