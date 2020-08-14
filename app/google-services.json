@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627291466742",
+    "firebase_url": "https://ready-to-eat-bits.firebaseio.com",
+    "project_id": "ready-to-eat-bits",
+    "storage_bucket": "ready-to-eat-bits.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627291466742:android:6d03239e5164a32ad175d7",
+        "android_client_info": {
+          "package_name": "com.e.untammeddragons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627291466742-ah7b8d7kejvik8pfgi4s9f0mavqg3m9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Yge9b_H_BPDmbgkCNLP2RgKqR604sKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627291466742-ah7b8d7kejvik8pfgi4s9f0mavqg3m9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

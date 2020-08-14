@@ -8,15 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class SignInHome extends AppCompatActivity {
 
     private String email , password;
     TextView inemail , inpassword;
     Button signin , signup;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in_home);
+        mAuth = FirebaseAuth.getInstance();
         inemail = (TextView)findViewById(R.id.editTextTextEmailAddress);
         inpassword = (TextView)findViewById(R.id.editTextTextPassword);
         signin = (Button)findViewById(R.id.btsignin);
@@ -31,7 +35,7 @@ public class SignInHome extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(SignInHome.this,Home.class));
             }
         });
     }
