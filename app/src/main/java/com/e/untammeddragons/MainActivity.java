@@ -14,18 +14,16 @@ public class MainActivity extends AppCompatActivity {
     private int TIME_OUT = 2500;
     Intent home;
     FirebaseUser currentUser;
-    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mAuth = FirebaseAuth.getInstance();
-//        if (currentUser) {
-//            home = new Intent(this,SignInHome.class);
-//        } else {
-//            home = new Intent(this,SignInHome.class);
-//        }
-        home = new Intent(this,SignInHome.class);
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser == null) {
+            home = new Intent(this,SignInHome.class);
+        } else {
+            home = new Intent(this,Home.class);
+        }
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -33,10 +31,5 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         },TIME_OUT);
-    }
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        currentUser = mAuth.getCurrentUser();
     }
 }
