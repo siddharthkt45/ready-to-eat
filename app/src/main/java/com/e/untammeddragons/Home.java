@@ -12,6 +12,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -21,6 +24,7 @@ public class Home extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
+    TextView canteenwork , canteenwork1 , canteenwork2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,20 +35,32 @@ public class Home extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        canteenwork = (TextView)findViewById(R.id.textView);
+        canteenwork1 = (TextView)findViewById(R.id.textView1);
+        canteenwork2 = (TextView)findViewById(R.id.textView2);
+        canteenwork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        canteenwork1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        canteenwork2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//
-//        getMenuInflater().inflate(R.menu.drawermenu, menu);
-//        return true;
-//    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
-        }
         switch(item.getItemId()){
             case R.id.menusignout:
                 FirebaseAuth.getInstance().signOut();
@@ -52,6 +68,10 @@ public class Home extends AppCompatActivity {
                 startActivity(new Intent(Home.this,SignInHome.class));
                 return true;
         }
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }
