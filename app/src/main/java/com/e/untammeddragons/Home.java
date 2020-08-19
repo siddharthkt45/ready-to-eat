@@ -24,7 +24,7 @@ public class Home extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
-    TextView canteenwork , canteenwork1 , canteenwork2;
+    TextView canteenwork;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,24 +36,10 @@ public class Home extends AppCompatActivity {
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         canteenwork = (TextView)findViewById(R.id.textView);
-        canteenwork1 = (TextView)findViewById(R.id.textView1);
-        canteenwork2 = (TextView)findViewById(R.id.textView2);
         canteenwork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
-        });
-        canteenwork1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-        canteenwork2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+                startActivity(new Intent(Home.this, Cart.class));
             }
         });
     }

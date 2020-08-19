@@ -55,6 +55,7 @@ public class SignInHome extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             startActivity(new Intent(SignInHome.this,Home.class));
+                            Toast.makeText(SignInHome.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
                             finish();
                         }
                         else
