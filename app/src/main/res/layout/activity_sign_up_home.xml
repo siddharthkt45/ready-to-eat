@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/newsplash1"
+    android:alpha="1"
+    tools:context=".SignUpHome">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/round_edit_new"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360sp"
+        android:background="@drawable/round_edit_new"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/round_edit_new"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btreg"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/round_edit_new"
+        android:padding="10sp"
+        android:text="Register" />
+
+</LinearLayout>

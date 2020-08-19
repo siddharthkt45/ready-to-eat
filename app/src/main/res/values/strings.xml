@@ -2,8 +2,8 @@
     <string name="app_name">Ready To Eat</string>
     <string name="open">DrawerLayout</string>
     <string name="close">DrawerLayout</string>
-    
-    <string-array name = "food_items">
+
+    <string-array name="food_items">
         <item>Aloo-Paratha</item>
         <item>Burger</item>
         <item>Chole-Bhature</item>
@@ -14,7 +14,7 @@
         <item>Tea</item>
     </string-array>
 
-    <integer-array name = "item_price">
+    <integer-array name="item_price">
         <item>45</item>
         <item>25</item>
         <item>45</item>
