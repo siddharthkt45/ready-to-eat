@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SignUpHome"></activity>
-        <activity android:name=".Cart" />
+        <activity android:name=".CartMain"></activity>
+        <activity android:name=".SignUpHome" />
+        <activity android:name=".Menu" />
         <activity android:name=".Home" />
         <activity android:name=".SignInHome" />
         <activity

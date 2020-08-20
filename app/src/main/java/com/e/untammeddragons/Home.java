@@ -1,19 +1,16 @@
 package com.e.untammeddragons;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.ui.NavigationUI;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +21,7 @@ public class Home extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
+    ImageView foodcart;
     TextView canteenwork;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,17 +29,29 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         navigationView = (NavigationView)findViewById(R.id.navigation);
+        foodcart = (ImageView)findViewById(R.id.foodcart);
         toggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         canteenwork = (TextView)findViewById(R.id.textView);
         canteenwork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Home.this, Cart.class));
+                startActivity(new Intent(Home.this, Menu.class));
             }
         });
+//        foodcart.setClickable(true);
+//        foodcart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //startActivity(new Intent(Home.this, CartMain.class));
+//                Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
+//            }
+//        });
     }
 
 
@@ -59,5 +69,10 @@ public class Home extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void foodClick(View view){
+        startActivity(new Intent(Home.this, CartMain.class));
+        Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
     }
 }

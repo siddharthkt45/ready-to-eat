@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-public class Cart extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     RecyclerView recyclerView;
     String itemName[];
