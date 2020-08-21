@@ -27,31 +27,23 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
-        navigationView = (NavigationView)findViewById(R.id.navigation);
-        foodcart = (ImageView)findViewById(R.id.foodcart);
-        toggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        navigationView = (NavigationView) findViewById(R.id.navigation);
+        foodcart = (ImageView) findViewById(R.id.foodcart);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setDisplayShowCustomEnabled(true);
-        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
+//        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+//        getSupportActionBar().setDisplayShowCustomEnabled(true);
+//        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        canteenwork = (TextView)findViewById(R.id.textView);
+        canteenwork = (TextView) findViewById(R.id.textView);
         canteenwork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home.this, Menu.class));
             }
         });
-//        foodcart.setClickable(true);
-//        foodcart.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //startActivity(new Intent(Home.this, CartMain.class));
-//                Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
-//            }
-//        });
     }
 
 
@@ -71,8 +63,8 @@ public class Home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void foodClick(View view){
-        startActivity(new Intent(Home.this, CartMain.class));
-        Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
-    }
+//    public void foodClick(View view){
+//        startActivity(new Intent(Home.this, CartMain.class));
+//        Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
+//    }
 }
