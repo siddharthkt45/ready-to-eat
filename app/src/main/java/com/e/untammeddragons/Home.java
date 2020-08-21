@@ -33,9 +33,9 @@ public class Home extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-//        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-//        getSupportActionBar().setDisplayShowCustomEnabled(true);
-//        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
+       this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         canteenwork = (TextView) findViewById(R.id.textView);
         canteenwork.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +63,8 @@ public class Home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    public void foodClick(View view){
-//        startActivity(new Intent(Home.this, CartMain.class));
-//        Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
-//    }
+   public void foodClick(View view){
+        startActivity(new Intent(Home.this, CartMain.class));
+        Toast.makeText(Home.this,"Working",Toast.LENGTH_LONG).show();
+    }
 }
