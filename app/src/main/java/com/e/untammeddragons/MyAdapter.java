@@ -3,6 +3,7 @@ package com.e.untammeddragons;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -48,6 +49,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         ImageView imgView;
         TextView itemName_txt, price_txt;
+        Button btnAdd;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             imgView = itemView.findViewById(R.id.imageView);
             itemName_txt = itemView.findViewById(R.id.itemName);
             price_txt = itemView.findViewById(R.id.price);
+            btnAdd = itemView.findViewById(R.id.addItem);
         }
     }
 

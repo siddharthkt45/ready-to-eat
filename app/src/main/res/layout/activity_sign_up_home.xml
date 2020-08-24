@@ -48,10 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:ems="10"
                 android:fontFamily="@font/amaranth_bold"
                 android:hint="Enter Name"
@@ -63,10 +59,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth_bold"
                 android:layout_margin="6dp"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:hint="Enter your email"
                 android:ems="10"
                 android:padding="6dp"
@@ -77,10 +69,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth_bold"
                 android:layout_margin="6dp"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:hint="Enter your Number"
                 android:ems="10"
                 android:padding="6dp"
@@ -91,10 +79,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth_bold"
                 android:layout_margin="6dp"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:hint="Enter your password"
                 android:ems="10"
                 android:padding="6dp"
@@ -105,10 +89,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amaranth_bold"
                 android:layout_margin="6dp"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:hint="Confirm your password"
                 android:ems="10"
                 android:padding="6dp"
@@ -118,10 +98,6 @@
                 android:layout_height="wrap_content"
                 android:text="Gender"
                 android:fontFamily="@font/amaranth_bold"
-<<<<<<< HEAD
-
-=======
->>>>>>> 6639d7989a82056bd162323dc43aeafbc5261fef
                 android:ems="10"
                 android:layout_margin="6dp"
                 android:padding="6dp"
