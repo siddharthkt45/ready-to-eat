@@ -2,17 +2,9 @@
     <string name="app_name">Ready To Eat</string>
     <string name="open">DrawerLayout</string>
     <string name="close">DrawerLayout</string>
-
-    <string-array name="food_items">
-        <item>Aloo-Paratha</item>
-        <item>Burger</item>
-        <item>Chole-Bhature</item>
-        <item>Coffee</item>
-        <item>Hot-Dog</item>
-        <item>Masala-Dosa</item>
-        <item>Plain-Dosa</item>
-        <item>Tea</item>
-    </string-array>
+    <string name="item_name">Item Name</string>
+    <string name="price">Price</string>
+    <string name="add">Add</string>
 
     <integer-array name="item_price">
         <item>45</item>
