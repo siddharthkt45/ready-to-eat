@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="40sp"
+    android:layout_height="50sp"
     android:layout_gravity="right"
     android:padding="5sp"
     android:orientation="horizontal">
@@ -23,8 +23,8 @@
 
     <ImageView
         android:id="@+id/foodcart"
-        android:layout_width="40sp"
-        android:layout_height="40sp"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
         android:layout_gravity="right"
         android:onClick="foodClick"
         android:src="@drawable/hotel" />

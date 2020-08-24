@@ -56,9 +56,9 @@ public class Home extends AppCompatActivity {
                 startActivity(new Intent(Home.this,SignInHome.class));
                 return true;
         }
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
-        }
+//        if(toggle.onOptionsItemSelected(item)){
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
