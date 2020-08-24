@@ -1,15 +1,23 @@
 package com.e.untammeddragons;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Menu extends AppCompatActivity {
+
+    ImageView foodcart;
 
     RecyclerView recyclerView;
     MyAdapter myAdapter;
@@ -67,5 +75,16 @@ public class Menu extends AppCompatActivity {
         imageList.add(R.drawable.samosa);
         imageList.add(R.drawable.tea);
 
+
+        foodcart = (ImageView) findViewById(R.id.foodcart);
+        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void foodClick(View view){
+        startActivity(new Intent(Menu.this, CartMain.class));
+        //Toast.makeText(Menu.this,"Working",Toast.LENGTH_LONG).show();
     }
 }

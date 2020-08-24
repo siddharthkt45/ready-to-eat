@@ -33,7 +33,8 @@ public class Home extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-       this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+
+        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setCustomView(R.layout.activity_my_action_bar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -49,16 +50,16 @@ public class Home extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
-            case R.id.menusignout:
-                FirebaseAuth.getInstance().signOut();
-                Toast.makeText(Home.this,"Signing out",Toast.LENGTH_LONG).show();
-                startActivity(new Intent(Home.this,SignInHome.class));
-                return true;
-        }
-//        if(toggle.onOptionsItemSelected(item)){
-//            return true;
+//        switch(item.getItemId()){
+//            case R.id.menusignout:
+//                FirebaseAuth.getInstance().signOut();
+//                Toast.makeText(Home.this,"Signing out",Toast.LENGTH_LONG).show();
+//                startActivity(new Intent(Home.this,SignInHome.class));
+//                return true;
 //        }
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
