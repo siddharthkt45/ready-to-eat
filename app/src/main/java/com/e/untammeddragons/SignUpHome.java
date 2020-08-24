@@ -38,6 +38,8 @@ public class SignUpHome extends AppCompatActivity {
                 smnumber = mnumber.getText().toString();
                 scpassword = cpassword.getText().toString();
                 spassword = password.getText().toString();
+                startActivity(new Intent(SignUpHome.this,Home.class));
+                finish();
             }
         });
     }

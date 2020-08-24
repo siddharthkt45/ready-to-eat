@@ -13,17 +13,18 @@ public class MainActivity extends AppCompatActivity {
 
     private int TIME_OUT = 2500;
     Intent home;
-    FirebaseUser currentUser;
+//    FirebaseUser currentUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (currentUser == null) {
-            home = new Intent(this,SignInHome.class);
-        } else {
-            home = new Intent(this,Home.class);
-        }
+        //currentUser = FirebaseAuth.getInstance().getCurrentUser();
+//        if (currentUser == null) {
+//            home = new Intent(this,SignInHome.class);
+//        } else {
+//            home = new Intent(this,Home.class);
+//        }
+        home = new Intent(this,SignInHome.class);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -34,21 +34,22 @@ public class SignInHome extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                email = inemail.getText().toString();
-                password = inpassword.getText().toString();
-                mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-                        startActivity(new Intent(SignInHome.this,Home.class));
-                        finish();
-                    }
-                });
+                startActivity(new Intent(SignInHome.this,Home.class));
+                finish();
+//                email = inemail.getText().toString();
+//                password = inpassword.getText().toString();
+//                mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+//                    @Override
+//                    public void onSuccess(AuthResult authResult) {
+//                        startActivity(new Intent(SignInHome.this,Home.class));
+//                        finish();
+//                    }
+//                });
             }
         });
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                             startActivity(new Intent(SignInHome.this,SignUpHome.class));
                             Toast.makeText(SignInHome.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
                             finish();
